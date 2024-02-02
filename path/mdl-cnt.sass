@@ -1,0 +1,133 @@
+.mdl_cnt
+	margin: 0
+	position: relative
+	z-index: 100
+	opacity: 1
+	.ttl
+		text-align: center
+		margin: 0 0 3.229vw
+		@media(max-width: 760px)
+			margin: 0 0 0
+		p
+			color: $g
+			font: normal 0.938vw/1.25vw $fs
+			letter-spacing: -0.028vw
+			@media(max-width: 1440px)
+				font: normal 0.972vw/1.319vw $fs
+				letter-spacing: -0.029vw	
+			@media(max-width: 1280px)
+				font: normal 0.938vw/1.328vw $fs
+				letter-spacing: -0.028vw	
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.66vw $fs
+				letter-spacing: -0.035vw
+			@media(max-width: 760px)
+				font: normal 14px/19px $fs	
+			.br
+				display: block
+		.mc_lnk
+			text-align: center
+			margin: 2.865vw 0 0
+			button,
+			a
+				@include ebg_btn		
+	.rows 
+		display: flex 
+		justify-content: space-between
+		align-items: flex-end
+		position: relative
+		height: 20.104vw
+		padding: 0 0 1.302vw
+		@media(max-width: 760px)
+			height: 139px
+			padding: 0 0 12px
+		.mdl_cpr
+			p 
+				color: $g 
+				font: normal 0.99vw/0.99vw $fa
+				@media(max-width: 1280px)
+					font: normal 0.938vw/0.938vw $fa	
+				@media(max-width: 1024px)
+					font: normal 1.172vw/1.172vw $fa
+				@media(max-width: 760px)
+					font: normal 15px/15px $fa		
+				.cpr 
+					display: inline-block
+					margin: 0 0 0 0.313vw
+					@media(max-width: 760px)
+						margin: 0 0 0 6px
+		.mdl_city
+			p 
+				color: $g 
+				font: normal 0.99vw/0.99vw $fa
+				@media(max-width: 1280px)
+					font: normal 0.938vw/0.938vw $fa	
+				@media(max-width: 1024px)
+					font: normal 1.172vw/1.172vw $fa
+				@media(max-width: 760px)
+					font: normal 15px/15px $fa		
+				a 
+					color: rgba(169, 171, 181, 0.40)
+					display: inline-block
+					position: relative	
+					padding: 0 0 0.156vw
+					margin: 0 0 0 0.729vw
+					display: none
+					@media(max-width: 760px)
+						padding: 0 0 2px
+						margin: 0 0 0 10px	
+					&:after 
+						content: ""
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						height:  .1rem
+						background: #515258
+						@media(max-width: 760px)
+							height: 1px
+		.mdl_ln_h
+			position: absolute
+			bottom: 0
+			left: 0 
+			right: 0 
+			width: 100%
+			height:  .1rem
+			@media(max-width: 760px)
+				height: 1px
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleX(0)
+				transform-origin: 50% 50%
+		.mdl_ln_v
+			position: absolute
+			bottom: 0
+			left: 0 
+			right: 0 
+			margin: 0 auto
+			width: 0.052vw
+			height: 100%
+			@media(max-width: 760px)
+				width: 1px
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleY(0)
+				transform-origin: 100% 100%
+
+
+
+
+
+
+
+
+
+

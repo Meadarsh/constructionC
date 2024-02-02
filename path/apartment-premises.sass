@@ -1,0 +1,329 @@
+.apartment_premises
+	margin: -1.198vw 0 0
+	position: relative
+	@media(max-width: 760px)
+		margin: -12px 0 0
+	.ap_bt_ln_h
+		position: absolute
+		bottom: 0
+		left: 0 
+		right: 0 
+		width: 100%
+		margin: 0 auto
+		height: 0.052vw 
+		@media(max-width: 760px)
+			opacity: 0
+		span 
+			position: absolute
+			width: 100%
+			height: 100%
+			display: block
+			background: #515258
+			transform: scaleX(0)
+			transform-origin: 50% 50%		
+	.ap_img
+		text-align: center
+		position: relative
+		@media(max-width: 760px)
+			margin-bottom: 195px
+		.ap_tp_ln_v
+			position: absolute
+			bottom: -3.177vw
+			right: 0 
+			left: -0.052vw
+			margin: 0 auto
+			width: 0.052vw
+			height: calc(100% + 3.177vw)
+			@media(max-width: 760px)
+				opacity: 0
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleY(0)
+				transform-origin: 100% 100%	
+		img 
+			@media(max-width: 1600px)
+				max-width: 33vw		
+			@media(max-width: 760px)
+				max-width: 319px				
+	.rows 
+		position: relative
+		display: flex 
+		margin: 3.177vw 0 0
+		@media(max-width: 760px)
+			display: none
+		.ap_ln_h
+			position: absolute
+			top: 0
+			left: 0 
+			right: 0 
+			width: calc(100% - 3.125vw)
+			margin: 0 auto
+			height: 0.052vw 
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleX(0)
+				transform-origin: 50% 50%
+		.ap_ln_v
+			position: absolute
+			bottom: 0
+			right: 0 
+			margin: 0 auto
+			width: 0.052vw
+			height: 100%
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleY(0)
+				transform-origin: 0% 0%
+		.cols
+			width: 50%
+			text-align: center	
+			position: relative
+			padding: 0 0 12.188vw
+			&.cols01
+				.d_img01
+					text-align: left
+					margin-right: auto
+			&.cols02
+				.d_img02
+					text-align: right	
+					margin-left: auto
+			.desc 
+				height: 100%	
+				// @media(max-width: 1000px)
+				// 	display: none
+				.nbr
+					position: relative
+					color: $g
+					font: normal 0.99vw/0.99vw $fa
+					margin: 1.771vw 0 0 
+					@media(max-width: 1280px)
+						font: normal 0.938vw/0.938vw $fa	
+					@media(max-width: 1024px)
+						font: normal 0.977vw/0.977vw $fa
+				.txt
+					color: $g 
+					font: normal 0.938vw/1.25vw $fa
+					margin: 3.698vw 0 0
+					letter-spacing: -0.028vw
+					text-align: center
+					@media(max-width: 1280px)
+						font: normal 0.938vw/1.250vw $fa
+						letter-spacing: -0.028vw
+					@media(max-width: 1024px)
+						font: normal 1.172vw/1.563vw $fa
+						letter-spacing: -0.035vw
+					.word
+						div
+							transform: translateY(100%)
+							opacity: 0
+			.d_img
+				margin: 0 0 0
+				padding: 10.26vw 0 0
+				max-width: 46.354vw
+				text-align: center
+				position: relative
+				&.active
+					.dic_desc
+						clip-path: inset(5% 10% 5% 10%)
+						transform: scale(.65)
+						transition: all 1.25s
+						@media(max-width: 1600px)
+							transform: scale(.8)
+						.d_img_cl 
+							//clip-path: inset(18% 15% 18% 15%)
+							//transform: scale(1)
+							transition: all 1.25s
+						.d_img_ovr
+							opacity: 1
+							transform: scale(1)
+							transition: all 1.25s
+							.ovr_scl
+								opacity: 1
+								transition: all 1.25s
+						.d_img_clip
+							.h5 
+								color: $g 
+								font: normal 1.51vw/1.51vw $fs
+								letter-spacing: -0.038vw
+								transition: all 1.25s
+								
+							.h3 
+								color: $g 
+								font: normal 4.01vw/4.01vw $fa
+								letter-spacing: -0.14vw
+								transform: translateY(-0.885vw)
+								transition: all 1.25s
+							.ts 
+								color: $g 
+								font: normal 0.729vw/0.729vw $fa		
+								transition: all 1.25s
+								transform: translateY(0.313vw)
+				.dic_desc
+					position: relative
+					height: 58.802vw
+					transform: scale(1)
+					clip-path: inset(0% 0% 0% 0%)
+					transition: all 1.25s
+					.d_img_cl 
+						@include abs 
+						width: 100%
+						height: 100%
+						object-fit: cover
+						transition: all 1.25s
+						//transform: scale(1)
+						//clip-path: inset(0% 0% 0% 0%)
+					.d_img_ovr
+						@include abs 
+						width: 100%
+						height: 100%
+						transform: scale(1)
+						opacity: 1
+						transition: all 1.25s
+						.ovr_scl
+							@include abs 
+							transform-origin: 50% 50%
+							width: 100%
+							height: 100%
+							background: rgba(19, 20, 26, 0.15)
+							opacity: 0
+							transition: all 1.25s
+					.d_img_clip
+						position: absolute
+						width: 100%
+						height: 100%
+						display: flex 
+						justify-content: center
+						align-items: center
+						z-index: 20
+						text-align: center
+						.h5 
+							color: #fff 
+							font: normal 2.083vw/2.083vw $fs
+							letter-spacing: 0.005vw
+							transition: all 1.25s
+						.h3 
+							color: #fff
+							font: normal 5.521vw/5.521vw $fa
+							letter-spacing: -0.193vw
+							transform: translateY(-1.302vw)
+							transition: all 1.25s
+						.ts 
+							color: rgba(255, 255, 255, 0.70)
+							font: normal 0.99vw/0.99vw $fa
+							transform: translateY(0.469vw)
+							transition: all 1.25s
+							@media(max-width: 1280px)
+								font: normal 0.938vw/0.938vw $fa	
+							@media(max-width: 1024px)
+								font: normal 1.172vw/1.172vw $fa
+	#rows_mb_scl01								
+		position: relative
+		top: 50vh
+	#rows_mb_scl02								
+		position: relative
+		top: 50vh	
+	.rows_mb
+		display: none
+		@media(max-width: 760px)
+			display: block
+		.cols
+			position: relative	
+			// &.cols02
+			// 	.desc
+			// 		.ap_bg_mb
+			// 			background-position: 50% -25px
+			.desc
+				text-align: center
+				.ap_bg_mb
+					height: 100vh
+					background-size: cover 
+					background-position: 50% 50%
+					background-repeat: no-repeat
+				.nbr
+					position: relative
+					color: rgba(169, 171, 181, 0.70)
+					font: normal 12px/12px $fa
+					margin: 0
+					padding-top: 57px 			
+				.dic_txt
+					margin: 120px 0 0
+					.h5 
+						color: #fff 
+						font: normal 19px/19px $fs
+						letter-spacing: -0.475px
+						transition: all 1.25s
+					.h3 
+						color: #fff 
+						font: normal 50px/50px $fa
+						letter-spacing: -1.75px
+						transition: all 1.25s
+						margin: -9px 0 0
+					.ts 
+						color: #fff
+						font: normal 12px/16px $fa		
+						transition: all 1.25s
+						margin: 16px 0 0
+				.txt
+					margin: 155px 0 0
+					p 
+						color: rgba(255, 255, 255, 0.70)
+						font: normal 14px/19px $fs
+						.br
+							display: block
+				.ap_bg_mb_lnks
+					margin: 44px 0 0
+					.ap_bg_mb_lnk
+						@include e_btn
+
+
+.ios
+	.apartment_premises 
+		.rows_mb 
+			.cols 
+				.desc 
+					.dic_txt 
+						.h3
+							@media(max-width: 760px)
+								margin: 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

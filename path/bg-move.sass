@@ -1,0 +1,134 @@
+.bg_move
+	position: relative
+	overflow: hidden
+	height: 26.615vw
+	margin: 6.563vw 0 0
+	// .bm_ovr
+	// 	@include abs 
+	// 	width: 100%
+	// 	height: 100%
+	// 	background: rgba(#000, .25)
+	@media(max-width: 760px)
+		height: 341px
+		margin: 122px 0 0		
+	img 
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 58.49vw
+		//object-fit: 125%
+		//object-position: 50% 50%
+		@media(max-width: 760px)
+			height: 620px	
+			width: auto
+			object-fit: cover
+			object-position: 50% 50%			
+	.container
+		height: 100%
+		position: relative
+		z-index: 50
+	.rows 
+		height: 100%
+		display: flex 
+		justify-content: space-between
+		align-items: flex-end
+		padding: 0 0 1.979vw
+		@media(max-width: 760px)
+			padding: 0 0 0
+			flex-wrap: wrap
+			align-items: flex-start
+			justify-content: flex-start
+		.cols01
+			@media(max-width: 760px)
+				width: 100%	
+				text-align: center
+				padding: 21px 0 0
+			p
+				@media(max-width: 760px)
+					font: normal 27px/27px $fa
+					letter-spacing: -1.08px	
+		.cols02
+			@media(max-width: 760px)
+				width: 100%
+			.r
+				@media(max-width: 760px)
+					margin-top: 235px
+					width: 100%
+					display: flex 
+					justify-content: space-between
+		.cols03
+			@media(max-width: 760px)
+				display: none		
+		.r
+			display: flex 
+			justify-content: center
+			@media(max-width: 760px)
+				flex-wrap: wrap
+				padding: 0 23px
+			.c
+				margin-right: 2.344vw
+				@media(max-width: 760px)
+					margin-right: 0
+				&:last-child
+					margin-right: 0
+				&.c02
+					margin-right: 0
+				&.c04
+					display: none	
+					@media(max-width: 760px)
+						display: block
+				&.c03
+					display: none
+					@media(max-width: 760px)
+						display: none		
+		p 
+			color: #fff
+			font: normal 0.885vw/0.885vw $fa
+			@media(max-width: 1280px)
+				font: normal 0.938vw/0.938vw $fa
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.172vw $fa
+			@media(max-width: 760px)
+				font: normal 14px/14px $fa	
+				color: #fff	
+			a
+				color: $g
+				transition: .7s cubic-bezier(.165,.84,.44,1) 
+				@media(max-width: 760px)
+					color: #fff
+				&:hover 
+					opacity: .5
+					transition: .7s cubic-bezier(.165,.84,.44,1) 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

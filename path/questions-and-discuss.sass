@@ -1,0 +1,241 @@
+.questions_and_discuss
+	margin: 23.542vw 0 0
+	position: relative
+	@media(max-width: 760px)
+		margin: 106px 0 0
+	.rows_ttl
+		display: flex 
+		position: relative
+		@media(max-width: 760px)
+			display: block
+		.cols_ttl 
+			width: 50%
+			position: relative
+			padding: 1.771vw 0 13.698vw
+			@media(max-width: 760px)
+				width: 100%
+				padding: 18px 0 68px
+			.rt_ln_v 	
+				@media(max-width: 760px)
+					display: none
+			&.cols_ttl02
+				@media(max-width: 760px)
+					display: none
+		.h3
+			@include h3	
+			.br
+				display: block
+			&.vs 
+				@media(max-width: 760px)
+					display: none 
+			&.mb 
+				display: none 
+				@media(max-width: 760px)
+					display: block			
+		.ln_h	
+			height: 0.052vw
+			width: 100%
+			position: absolute
+			margin: 0
+			left: 0
+			@media(max-width: 760px)
+				height: 1px
+			&.rt_ln_h_th
+				top: 0
+			&.rt_ln_h_bh
+				bottom: 0
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleX(0)
+				transform-origin: 50% 50%
+		.ln_v
+			position: absolute
+			top: 0
+			right: 0
+			margin: auto
+			width: 0.052vw
+			height: 100%
+			@media(max-width: 760px)
+				width: 1px
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleY(0)
+				transform-origin: 0% 0%
+	.rows
+		position: relative
+		display: flex 
+		@media(max-width: 760px)
+			display: block
+		&.rows100
+			.cols
+				width: 100%
+		&.rows_btn
+			text-align: center
+			margin: 2.552vw 0 0
+			@media(max-width: 760px)
+				margin: 40px 0 0
+			.cols
+				width: 100%
+		.cols
+			width: 50%
+			position: relative
+			height: 8.75vw
+			@media(max-width: 760px)
+				height: auto 
+				width: 100%
+			&.cols_txt
+				@media(max-width: 760px)
+					height: 180px	
+			&.cols02
+				padding-left: 1.667vw
+				@media(max-width: 760px)
+					padding-left: 0
+				.parsley-errors-list
+					left: 1.667vw
+					@media(max-width: 760px)
+						left: 0
+				.r_ln_bh
+					opacity: 0	
+					bottom: auto 
+					top: 0	
+					@media(max-width: 760px)
+						opacity: 1
+			.parsley-errors-list
+				top: 0.521vw
+				z-index: 20
+				@media(max-width: 760px)
+					top: 0
+			.r_ln_h 
+				@media(max-width: 760px)	
+					display: none
+		input
+			width: 100%
+			background: none
+			border: 0
+			color: #fff
+			font: normal 0.99vw/0.99vw $fa
+			margin: 1.094vw 0 0
+			@media(max-width: 1280px)
+				font: normal 0.938vw/0.938vw $fa	
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.172vw $fa
+			@media(max-width: 760px)
+				margin: 0
+				padding: 9px 0 41px
+				font: normal 12px/12px $fa	
+			&::-webkit-input-placeholder
+				color: $g
+			&::-moz-placeholder
+				color: $g
+			&:-moz-placeholder
+				color: $g
+			&:-ms-input-placeholder 
+				color: $g
+		textarea
+			width: 100%
+			background: none
+			border: 0
+			color: #fff
+			font: normal 0.99vw/0.99vw $fa
+			resize: none
+			margin: 1.094vw 0 0
+			@media(max-width: 1280px)
+				font: normal 0.938vw/0.938vw $fa
+				margin: 1.328vw 0 0	
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.172vw $fa
+			@media(max-width: 760px)
+				margin: 0
+				height: 178px
+				padding: 9px 0 0
+				font: normal 12px/16px $fa					
+			&::-webkit-input-placeholder
+				color: $g
+			&::-moz-placeholder
+				color: $g
+			&:-moz-placeholder
+				color: $g
+			&:-ms-input-placeholder 
+				color: $g
+		.get_go
+			border: 0
+			@include ebg_btn
+			cursor: pointer
+			@media(max-width: 760px)
+				display: block
+				text-align: center
+				width: 100%
+				padding-left: 0
+				padding-right: 0
+			&[disabled]
+				cursor: default	
+				border: 0
+				background: rgba(169, 171, 181, 0.20)
+				color: $g
+				opacity: .5
+				&:hover
+					cursor: default	
+					border: 0
+					background: rgba(169, 171, 181, 0.20)	
+					color: $g
+		.r_ln_bh
+			height: 0.052vw
+			width: 100%
+			position: absolute
+			margin: 0
+			left: 0
+			bottom: 0
+			@media(max-width: 760px)
+				height: 1px
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleX(0)
+				transform-origin: 50% 50%
+		.r_ln_h
+			position: absolute
+			top: 0
+			right: 0
+			margin: auto
+			width: 0.052vw
+			height: 100%
+			@media(max-width: 760px)
+				width: 1px
+			span 
+				position: absolute
+				width: 100%
+				height: 100%
+				display: block
+				background: #515258
+				transform: scaleY(0)
+				transform-origin: 0% 0%			
+
+
+
+
+.safari_mac
+	.questions_and_discuss 
+		.rows 
+			.get_go			
+				padding-top: 1vw
+				padding-bottom: 1vw
+
+
+
+
+
+
+
+
+

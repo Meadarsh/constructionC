@@ -1,0 +1,56 @@
+#footer
+	position: relative
+	//position: fixed
+	top: auto
+	bottom: 0
+	height: auto
+	//height: 89px
+	width: 100%
+	background-color: $d
+	overflow: hidden
+	margin: 0
+	padding: 0.573vw 0 0
+	z-index: 20
+	@media(max-width: 760px)
+		padding: 0 0 0
+	.rows
+		padding: 0.885vw 0 1.615vw
+		display: flex 
+		justify-content: space-between
+		border-top: rgba(169, 171, 181, 0.35) 0.052vw solid
+		@media(max-width: 760px)
+			padding: 13px 0 22px
+			border-top: rgba(169, 171, 181, 0.35) 0 solid
+		.cpr_wrap
+			p 
+				color: rgba(107, 108, 114, 0.70) 
+				font: normal 1.51vw/1.51vw $fs
+				letter-spacing: -0.038vw
+				@media(max-width: 1280px)
+					font: normal 1.563vw/1.563vw $fs
+					letter-spacing: -0.038vw
+				@media(max-width: 760px)
+					font: normal 14px/14px $fs
+					letter-spacing:  -0.35px	
+				.cpr 
+					display: inline-block
+					margin-left: 0.313vw
+					@media(max-width: 760px)
+						margin-left: 0
+		.develop 
+			p 
+				color: rgba(107, 108, 114, 0.70) 
+				font: normal 1.51vw/1.51vw $fs
+				letter-spacing: -0.038vw
+				@media(max-width: 1280px)
+					font: normal 1.563vw/1.563vw $fs
+					letter-spacing: -0.038vw
+				@media(max-width: 760px)
+					font: normal 14px/14px $fs
+					letter-spacing:  -0.35px	
+				a 
+					color: $g	
+					transition: .35s
+					&:hover
+						color: #fff
+						transition: .35s
