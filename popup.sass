@@ -1,0 +1,684 @@
+
+.pin-spacer-sfo
+	z-index: 450!important	
+	
+.sap_form_ovr
+	position: absolute
+	top: 0
+	left: 0 
+	right: 0
+	margin: auto
+	width: 100%
+
+
+.sap_form
+	position: absolute
+	top: 0
+	left: 0 
+	right: 0 
+	width: 100%
+	height: 44.167vw 
+	background: #26262A
+	z-index: 550
+	transform: translateY(-140%)
+	transition: .5s 
+	@media(max-width: 760px)
+		height: 100vh	
+		transform: translateY(-140%)
+	&.active
+		transform: translateY(0)
+		transition: .5s				
+	.t_rows
+		padding-top: 1.25vw
+		text-align: center
+		@media(max-width: 760px) 
+			padding-top: 20px		
+		.t_logo
+			width: 100%
+			@media(max-width: 760px)
+				width: 74px
+				margin-left: 10px 
+		.h5
+			color: #fff 
+			font: normal 0.99vw/0.99vw $fa
+			margin: 3.281vw 0 1.302vw	
+			@media(max-width: 760px)
+				font: normal 14px/14px $fa
+				margin: 42px 0 28px	
+	.rows
+		position: relative
+		display: flex 
+		width: 100%
+		border-bottom: .1rem solid #515258
+		// @media(max-width: 760px)
+		// 	display: block
+		@media(max-width: 760px)	
+			flex-wrap: wrap
+		&:first-child
+			border-top: .1rem solid #515258
+		&.rows100
+			.cols
+				width: 100%
+		&.rows_btn
+			text-align: center
+			margin: 3.49vw 0 0
+			border-bottom: 0
+			@media(max-width: 760px)
+				margin: 29px 0 0
+			.cols
+				width: 100%
+		.cols
+			width: 50%
+			position: relative
+			height: 7.135vw
+			@media(max-width: 760px)
+				height: auto 
+				width: 100%
+			&.cols_txt
+				@media(max-width: 760px)
+					height: 180px	
+			&.cols01
+				border-right: .1rem solid #515258	
+				@media(max-width: 760px)
+					border-right: 0	
+					border-bottom: .1rem solid #515258	
+			&.cols02
+				padding-left: 1.667vw
+				@media(max-width: 760px)
+					padding-left: 0
+				.parsley-errors-list
+					left: 1.667vw
+					@media(max-width: 760px)
+						left: 0
+				.r_ln_bh
+					opacity: 0	
+					bottom: auto 
+					top: 0	
+					@media(max-width: 760px)
+						opacity: 1
+			.parsley-errors-list
+				top: 0.521vw
+				z-index: 20
+				@media(max-width: 760px)
+					top: 0
+			.r_ln_h 
+				@media(max-width: 760px)	
+					display: none
+		input
+			width: 100%
+			background: none
+			border: 0
+			color: #fff
+			font: normal 0.99vw/0.99vw $fa
+			margin: 1.094vw 0 0
+			@media(max-width: 1280px)
+				font: normal 0.938vw/0.938vw $fa	
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.172vw $fa
+			@media(max-width: 760px)
+				margin: 0
+				padding: 9px 0 41px
+				font: normal 14px/14px $fa	
+			&::-webkit-input-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/12px $fa
+			&::-moz-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/12px $fa
+			&:-moz-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/12px $fa
+			&:-ms-input-placeholder 
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/12px $fa
+		textarea
+			width: 100%
+			background: none
+			border: 0
+			color: #fff
+			font: normal 0.99vw/0.99vw $fa
+			resize: none
+			margin: 1.25vw 0 0
+			height: 5.833vw
+			@media(max-width: 1280px)
+				font: normal 0.938vw/0.938vw $fa
+				margin: 1.328vw 0 0	
+			@media(max-width: 1024px)
+				font: normal 1.172vw/1.172vw $fa
+			@media(max-width: 760px)
+				margin: 0
+				height: 175px
+				padding: 9px 0 0
+				font: normal 14px/18px $fa					
+			&::-webkit-input-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/16px $fa	
+			&::-moz-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/16px $fa	
+			&:-moz-placeholder
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/16px $fa
+			&:-ms-input-placeholder 
+				color: $g
+				@media(max-width: 760px)
+					font: normal 12px/16px $fa
+		.get_go
+			border: 0
+			@include ebg_btn
+			cursor: pointer
+			@media(max-width: 760px)
+				display: block
+				text-align: center
+				width: 100%
+				padding-left: 0
+				padding-right: 0
+			&[disabled]
+				cursor: default	
+				border: 0
+				background: rgba(169, 171, 181, 0.20)
+				color: $g
+				opacity: .5
+				&:hover
+					cursor: default	
+					border: 0
+					background: rgba(169, 171, 181, 0.20)	
+					color: $g
+		// .r_ln_bh
+		// 	height: 0.052vw
+		// 	width: 100%
+		// 	position: absolute
+		// 	margin: 0
+		// 	left: 0
+		// 	bottom: 0
+		// 	opacity: .41
+		// 	@media(max-width: 760px)
+		// 		height: 1px
+		// 	span 
+		// 		position: absolute
+		// 		width: 100%
+		// 		height: 100%
+		// 		display: block
+		// 		background: #515258
+		// 		transform: scaleX(0)
+		// 		transform-origin: 50% 50%
+		// .r_ln_h
+		// 	position: absolute
+		// 	top: 0
+		// 	right: 0
+		// 	margin: auto
+		// 	width: 0.052vw
+		// 	height: 100%
+		// 	opacity: .41
+		// 	@media(max-width: 760px)
+		// 		width: 1px
+		// 	span 
+		// 		position: absolute
+		// 		width: 100%
+		// 		height: 100%
+		// 		display: block
+		// 		background: #515258
+		// 		transform: scaleY(0)
+		// 		transform-origin: 0% 0%		
+	.rows_agr
+		text-align: center
+		margin: 1.042vw 0 0
+		@media(max-width: 760px)
+			margin: 20px 0 0
+		p
+			color: rgba(169, 171, 181, 0.70)
+			font: normal 0.625vw/0.99vw $fs
+			letter-spacing: 0.003vw
+			@media(max-width: 760px)
+				font: 300 12px/19px $fs
+				letter-spacing:  0.06px
+			.br
+				display: block
+				@media(max-width: 760px)
+					display: inline
+			a 
+				color: rgba(169, 171, 181, 0.70)
+				display: inline-block
+				position: relative	
+				&:before 
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1px 
+					background: rgba(169, 171, 181, 0.70)
+
+
+
+.sap_form_cls
+	position: absolute
+	top: 1.354vw
+	right: 1.094vw
+	cursor: pointer
+	background: url(../img/s8.svg) no-repeat 0 0/cover
+	width: 1.667vw
+	height: 1.667vw
+	margin: 0
+	border: 0
+	display: block
+	@media(max-width: 760px)
+		width: 26px
+		height: 26px		
+		top: 15px
+		right: 10px
+	// .lb 
+	// 	position: relative
+	// 	display: block
+	// 	transition: .35s		
+		//transform-origin: 0 0			
+		// &.lb01
+		// 	width: 22px
+		// 	top: 0px
+		// 	left: 0px
+		// 	transform: rotate(45deg) translateX(2px) translateY(1px)
+		// &.lb02
+		// 	width: 22px
+		// 	top: 6px
+		// 	left: 0px
+		// 	transform: rotate(-45deg) translateX(4px) translateY(-2px)	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.fancybox-overlay
+	background-image: none
+	background: rgba(9, 25, 47, .56) repeat 
+
+.fancybox-close
+	top: 1.8rem
+	right: 1.8rem
+	width: 1.8rem
+	height: 1.8rem
+	background-image: none
+	&:after
+		content: ""
+		//@include abs 
+		width: 1.8rem
+		height: .2rem 
+		background: #fff 
+		transform: rotate(45deg)
+	&:before
+		content: ""
+		//@include abs 
+		width: 1.8rem 
+		height: .2rem
+		background: #fff 
+		transform: rotate(-45deg)		
+
+
+.nnvg 
+	.fancybox-button--arrow_left,
+	.fancybox-button--arrow_right
+		display: none !important
+	.fancybox-button 
+		svg
+			color: $ol
+			display: none 
+		background: url(../img/bcl.svg) no-repeat 0 0
+		width: 2.9rem 
+		height: 3rem	
+		top: 5rem
+		right: 5rem
+	.fancybox-slide--html
+		padding: 0
+
+
+.win_popup
+	width: 100%
+	height: 100%
+	padding: 0
+	background: #fff
+	.win_popup_ovr
+		height: 100%
+		display: flex 
+		align-items: center
+		justify-content: center
+		width: 100%
+	.win_popup_in 
+		width: 100%	
+	.line_pp
+		height: auto
+		text-align: center
+		background: #fff
+		padding: 0
+		.h3
+			font: 300 8.2rem/7.4rem $fs
+			color: $ol
+			margin: 0 0 1.2rem 
+			letter-spacing: 0.3em
+			text-transform: uppercase
+			@media(max-width: 1600px)
+				font: 200 7.8rem/7.0rem $fs	
+			@media(max-width: 1450px)
+				font: 200 7.4rem/6.7rem $fs	
+			@media(max-width: 1366px)
+				font: 200 6.6rem/5.9rem $fs	
+			@media(max-width: 1200px)
+				font: 200 5.5rem/4.9rem $fs	
+			@media(max-width: 1100px)
+				font: 200 5.0rem/4.4rem $fs	
+				letter-spacing: 0.2em
+			@media(max-width: 760px)
+				font: 200 3.8rem/3.6rem $fs	
+				letter-spacing: 0.2em									
+		p 	
+			font: normal 1.7rem/2.1rem $fs
+			color: #fff
+			max-width: 72rem
+			margin: auto	
+	.blc_pp_wt
+		padding: 7.7rem 0 0
+		max-width: 125rem
+		margin: auto
+		text-align: left
+		@media(max-width: 1366px)
+			max-width: 105rem	
+		@media(max-width: 1100px)
+			max-width: 85rem
+			padding: 5rem 0 0		
+		@media(max-width: 900px)
+			max-width: 75rem
+		@media(max-width: 760px)
+			max-width: calc(100% - 4rem)
+			margin: 0 auto
+		.rows
+			position: relative
+			display: flex
+			justify-content: space-between
+			margin: 0 0 2rem
+			@media(max-width: 760px)
+				flex-wrap: wrap
+			&.rows100 
+				.cols	
+					width: 100%
+			.cols 
+				width: calc(50% - 2.4rem)
+				position: relative
+				@media(max-width: 760px)
+					width: 100%
+				&.cols01	
+					@media(max-width: 760px)	
+						margin-bottom: 3rem
+			input			
+				border: 0rem solid #b8b8b8
+				border-bottom: .2rem solid rgba(#494949, .6) 
+				width: 100%
+				//height: 46rem
+				color: rgba(#494949, 1) 
+				font: normal 2.6rem/2.6rem $fs
+				letter-spacing: 0.02em
+				position: relative	
+				padding: 1rem 0rem
+				text-transform: uppercase
+				-webkit-appearance: none
+				-moz-appearance: none	
+				border-radius: 0			
+				@media(max-width: 1366px)
+					font: normal 2.2rem/2.2rem $fs
+				@media(max-width: 1100px)
+					font: normal 2rem/2rem $fs	
+				@media(max-width: 760px)
+					border-bottom: .1rem solid rgba(#494949, .6) 
+					font: normal 1.8rem/1.8rem $fs	
+				&::-webkit-input-placeholder
+					color: rgba(#494949, .6) 
+				&::-moz-placeholder
+					color: rgba(#494949, .6) 
+				&:-moz-placeholder
+					color: rgba(#494949, .6) 
+				&:-ms-input-placeholder 
+					color: rgba(#494949, .6) 		
+		.rows
+			position: relative
+			text-align: center
+			margin: 3.5rem 0 0
+			@media(max-width: 800px)
+				margin: 1.5rem 0 0
+			.get_go
+				font: 300 2rem/2rem $fs	
+				border: .2rem solid $ol
+				padding: 1.7rem 3.3rem
+				cursor: pointer
+				color: $ol
+				background: transparent
+				transition: .35s
+				text-transform: uppercase
+				border-radius: 5rem 
+				letter-spacing: 0.13em
+				margin-top: 1.9rem
+				@media(max-width: 1600px)
+					padding: 1.6rem 3.3rem
+					font: 300 1.9rem/1.9rem $fs	
+				@media(max-width: 1450px)
+					padding: 1.6rem 3.3rem
+					font: 300 1.8rem/1.8rem $fs	
+				@media(max-width: 1366px)
+					padding: 1.3rem 3.3rem
+					font: 300 1.6rem/1.6rem $fs			
+				@media(max-width: 1200px)
+					padding: 1.2rem 3rem 1rem
+					font: 300 1.3rem/1.3rem $fs															
+				&:hover
+					color: #fff
+					border-color: $ol
+					background: $ol
+					transition: .35s				
+			button[disabled]
+				cursor: default	
+				border: .2rem solid #b8b8b8
+				background: transparent
+				color: #b1b1b1
+				&:hover
+					cursor: default	
+					border: 2rem solid #b8b8b8
+					background: transparent	
+					color: #b1b1b1			
+			// p.pp_notis
+			// 	position: absolute
+			// 	top: 0
+			// 	left: 10rem	
+			// 	font: normal 16rem/20rem $fs
+			// 	color: #949494
+			// 	max-width: 165rem
+			// 	text-align: left
+			// 	@media(max-width: 800rem)
+			// 		position: static
+			// 		max-width: none
+			// 		margin: 0 0 20rem 10rem
+			// 	i 
+			// 		color: #000
+			// 		display: inline-block
+			// 		margin: 0rem 0 0 -11rem
+			// 		font-size: 15rem
+			// 		position: relative
+			// 		top: -4rem
+
+.iagree
+	margin: 1.7rem 0 0
+	position: relative
+	text-align: center
+	width: 100%
+	@media(max-width: 750px)
+		margin: 1.7rem 0 0
+	input[type=checkbox].css-checkbox
+		position: absolute
+		z-index: -1000
+		left: -1000rem
+		overflow: hidden
+		clip: rect(0 0 0 0)
+		height: .1rem
+		width: .1rem
+		margin: -.1rem
+		padding: 0
+		border: 0
+		+	label.css-label
+			padding-left: 2.5rem
+			height: auto
+			display: inline-block
+			background-repeat: no-repeat
+			background-position: 0 0rem
+			font: 300 2rem/2rem $fs
+			letter-spacing: 0.025em
+			vertical-align: middle
+			cursor: pointer
+			margin-bottom: 0
+			position: relative 
+			text-align: left
+			color: #494949
+			@media(max-width: 800px)
+				font: 300 1.8rem/1.8rem $fs
+			@media(max-width: 760px)
+				font: 300 1.5rem/1.5rem $fs				
+		&:checked
+			+	label.css-label
+				&:before 
+					background: rgba($ol, 1)
+	label.css-label
+		-webkit-touch-callout: none
+		-webkit-user-select: none
+		-khtml-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		color: #949494
+		// &:before
+		// 	content: ""
+		// 	@include abs
+		// 	background: #b8b8b8
+		// 	width: 14rem
+		// 	height: 14rem
+		// 	z-index: 2
+		&:before 
+			content: ""
+			position: absolute
+			top: .7rem
+			bottom: 0
+			left: .5rem
+			width: .5rem
+			height: .5rem
+			background: rgba($ol, 0)
+			z-index: 1
+			border-radius: 100% 
+			@media(max-width: 760px)
+				top: .4rem			
+		&:after
+			content: ""
+			position: absolute
+			top: .2rem
+			bottom: 0
+			left: 0
+			width: 1.3rem
+			height: 1.3rem
+			border: .1rem solid $ol
+			z-index: 1
+			border-radius: 100% 
+			@media(max-width: 760px)
+				top: -.1rem			
+		// a
+		// 	color: #B6B6B6
+		// 	transition: .35s
+		// 	position: relative
+		// 	&:hover
+		// 		color: #000
+		// 		transition: .35s
+		// 		&:after
+		// 			background: #000
+		// 			transition: .35s
+		// 	&:after
+		// 		content: ""
+		// 		position: absolute 
+		// 		bottom: -2rem
+		// 		left: 0
+		// 		right: 0
+		// 		height: 1rem 
+		// 		width: 100%
+		// 		background: #B6B6B6
+		// 		transition: .35s
+    
+.thank_you
+	width: 91rem
+	min-height: 17.5rem
+	background: #fff
+	@media(max-width: 980px)
+		width: 75rem
+	@media(max-width: 800px)
+		width: 60rem
+	@media(max-width: 650px)
+		width: 50rem
+	@media(max-width: 550px)
+		width: 40rem
+	@media(max-width: 450px)
+		width: 30rem
+	@media(max-width: 350px)
+		width: 27.5rem
+	.line_pp
+		height: 12.5rem
+	.blc_pp_wt
+		text-align: center
+		padding: 5.1rem 0 5.2rem
+		p
+			font: normal 2.4rem/3rem $fs
+			color: #0b1c2b
+			margin: 0 0 .1rem
+		span 
+			font: 300 2rem/3rem $fs
+			color: #0b1c2b
+
+
+.fancybox-inner
+	overflow: visible !important
+	min-height: 10rem   
+    
+.fancybox-is-open
+	.fancybox-infobar
+		opacity: 0 !important
+		visibility: hidden !important
+
+.fancybox-infobar
+	position: absolute
+	top: auto
+	bottom: 0
+	left: 0
+	right: 0 
+	margin: auto 
+	width: 6rem 
+	height: 6rem 
+	border-radius: 100%
+	border: .3rem solid rgba(#fff, 1)
+	display: flex 
+	align-items: center 
+	justify-content: center 
+	letter-spacing: 0.13em
+	font: 300 1.6rem/1.6rem $fs
+	color: #fff
+	
+.fancybox-slide--image .fancybox-content
+	animation-timing-function: cubic-bezier(0,0,0,0)	
